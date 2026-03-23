@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Nimbus Vista | Modern Weather</title>
+    <!-- Google Fonts & Simple Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="app-container">
+    <div class="hero-section">
+        <div class="brand">
+            <i class="fas fa-cloud-sun"></i> 
+            <span>Nimbus Vista</span>
+        </div>
+        <div class="sub">animated weather · global pulse</div>
+        
+        <!-- Search Box -->
+        <div class="search-card">
+            <input type="text" id="locationInput" placeholder="e.g., London, Tokyo, New York, Paris" autocomplete="off">
+            <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+        </div>
+        <div class="location-chip" id="locationChip">
+            <div class="geo-badge"><i class="fas fa-map-marker-alt"></i> <span id="currentCountryLabel">Detecting country...</span></div>
+            <div class="geo-badge"><i class="fas fa-globe"></i> <span id="currentPlaceLabel">--</span></div>
+        </div>
+    </div>
+
+    <div id="weatherContent">
+        <!-- dynamic content -->
+        <div class="loading-overlay" id="loadingSpinner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <footer>🌤️ Real-time weather · Animated icons based on conditions</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
